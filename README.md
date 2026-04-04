@@ -2,7 +2,7 @@
 
 A task board for managing work across teams. Drag tasks between columns, filter by priority or assignee, leave comments, track changes. Built with React, TypeScript, and Supabase — backed by a Go REST API.
 
-**Live app:** https://nextplay-kanban-zeta.vercel.app  
+**Live app:** https://kanban-nextplay.vercel.app/  
 **API repo:** https://github.com/Prashanthpavudala/nextplay-kanban-api
 
 ---
