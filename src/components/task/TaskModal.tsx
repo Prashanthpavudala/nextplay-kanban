@@ -106,11 +106,7 @@ export function TaskModal({ userId, defaultStatus = 'todo', task, labels, member
 
   return (
     <div className="overlay animate-fade-in" onClick={e => { if (e.target === e.currentTarget) onClose() }}>
-      <div className="animate-scale-in" style={{
-        background: 'var(--surface)', border: '1px solid var(--border2)', borderRadius: 16,
-        width: '100%', maxWidth: 540, maxHeight: '90vh', overflow: 'auto',
-        boxShadow: 'var(--shadow-lg)',
-      }}>
+      <div className="modal-box animate-scale-in">
         <div style={{ padding: '20px 24px 16px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <h2 className="font-display" style={{ fontSize: 17, fontWeight: 700 }}>
             {editing ? 'Edit Task' : 'New Task'}

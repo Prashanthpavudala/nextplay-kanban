@@ -95,11 +95,7 @@ export function TaskDetailPanel({ task, userId: _userId, labels: _labels, onClos
 
   return (
     <div className="overlay animate-fade-in" onClick={e => { if (e.target === e.currentTarget) onClose() }}>
-      <div className="animate-scale-in" style={{
-        background: 'var(--surface)', border: '1px solid var(--border2)', borderRadius: 16,
-        width: '100%', maxWidth: 580, maxHeight: '92vh',
-        display: 'flex', flexDirection: 'column', boxShadow: 'var(--shadow-lg)', overflow: 'hidden',
-      }}>
+      <div className="modal-box animate-scale-in" style={{ display:"flex", flexDirection:"column" }}>
         {/* Header */}
         <div style={{ padding: '18px 24px 14px', borderBottom: '1px solid var(--border)', flexShrink: 0 }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>

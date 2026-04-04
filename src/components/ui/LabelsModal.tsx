@@ -37,14 +37,7 @@ export function LabelsModal({ userId, labels, onClose, onUpdated }: Props) {
 
   return (
     <div className="overlay animate-fade-in" onClick={e => { if (e.target === e.currentTarget) onClose() }}>
-      <div className="animate-scale-in" style={{
-        background: 'var(--surface)',
-        border: '1px solid var(--border2)',
-        borderRadius: 16,
-        width: '100%', maxWidth: 420,
-        boxShadow: 'var(--shadow-lg)',
-        overflow: 'hidden',
-      }}>
+      <div className="modal-box animate-scale-in">
         <div style={{ padding: '18px 24px 14px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <h2 className="font-display" style={{ fontSize: 16, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8 }}>
             <Tag size={16} color="var(--accent)" /> Manage Labels
